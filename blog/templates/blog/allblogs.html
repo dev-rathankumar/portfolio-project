@@ -85,7 +85,7 @@
         <div class="card mb-4">
           <img class="card-img-top" src="{{ blog.image.url }}" width="750px" height="300px"/>
           <div class="card-body">
-            <h2 class="card-title">{{ blog.title }}</h2>
+            <a href="{% url 'detail' blog.id %}"><h2 class="card-title">{{ blog.title }}</h2></a>
             <p class="card-text">{{ blog.body|truncatewords:40 }}</p>
             <a href="#" class="btn btn-primary">Read More &rarr;</a>
           </div>
